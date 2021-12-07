@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/todoapp-reactreduxtoolkit/static/css/main.d2082ed0.chunk.css",
+    "main.js": "/todoapp-reactreduxtoolkit/static/js/main.ff9a6228.chunk.js",
+    "main.js.map": "/todoapp-reactreduxtoolkit/static/js/main.ff9a6228.chunk.js.map",
+    "runtime-main.js": "/todoapp-reactreduxtoolkit/static/js/runtime-main.a0ab28b9.js",
+    "runtime-main.js.map": "/todoapp-reactreduxtoolkit/static/js/runtime-main.a0ab28b9.js.map",
+    "static/js/2.396cdaa4.chunk.js": "/todoapp-reactreduxtoolkit/static/js/2.396cdaa4.chunk.js",
+    "static/js/2.396cdaa4.chunk.js.map": "/todoapp-reactreduxtoolkit/static/js/2.396cdaa4.chunk.js.map",
+    "index.html": "/todoapp-reactreduxtoolkit/index.html",
+    "static/css/main.d2082ed0.chunk.css.map": "/todoapp-reactreduxtoolkit/static/css/main.d2082ed0.chunk.css.map",
+    "static/js/2.396cdaa4.chunk.js.LICENSE.txt": "/todoapp-reactreduxtoolkit/static/js/2.396cdaa4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0ab28b9.js",
+    "static/js/2.396cdaa4.chunk.js",
+    "static/css/main.d2082ed0.chunk.css",
+    "static/js/main.ff9a6228.chunk.js"
+  ]
+}
