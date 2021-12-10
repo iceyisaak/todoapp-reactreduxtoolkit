@@ -1,16 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { MdOutlineAddCircleOutline } from 'react-icons/md';
-import { useTodoContext } from '../../contexts/TodoContext';
+// import { useTodoContext } from '../../contexts/TodoContext';
+import { addTask } from '../../redux/slices/TodoSlice';
 
 import style from './TaskForm.module.scss';
 
 const TaskForm = () => {
 
-  const {
-    addTask,
-    editTask,
-    editItem
-  } = useTodoContext();
+  // const {
+  //   addTask,
+  //   editTask,
+  //   editItem
+  // } = useTodoContext();
+
+  const dispatch = useDispatch();
 
   const [taskEntry, setTaskEntry] = useState("");
 
@@ -21,23 +25,29 @@ const TaskForm = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
 
-    if (!editItem) {
-      addTask(taskEntry);
-      setTaskEntry('');
-    } else {
-      editTask(taskEntry, editItem.id);
-    }
+    dispatch(
+      addTask({
+        taskEntry
+      })
+    );
+
+    // if (!editItem) {
+    //   addTask(taskEntry);
+    //   setTaskEntry('');
+    // } else {
+    //   editTask(taskEntry, editItem.id);
+    // }
 
   };
 
 
-  useEffect(() => {
-    if (editItem) {
-      setTaskEntry(editItem.taskEntry);
-    } else {
-      setTaskEntry('');
-    }
-  }, [editItem]);
+  // useEffect(() => {
+  //   if (editItem) {
+  //     setTaskEntry(editItem.taskEntry);
+  //   } else {
+  //     setTaskEntry('');
+  //   }
+  // }, [editItem]);
 
 
   return (

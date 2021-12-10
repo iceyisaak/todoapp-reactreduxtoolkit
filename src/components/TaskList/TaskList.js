@@ -1,11 +1,18 @@
-import { useTodoContext } from '../../contexts/TodoContext';
+// import { useTodoContext } from '../../contexts/TodoContext';
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { initTasks, initialState } from "../../redux/slices/TodoSlice";
 import TaskItem from "./TaskItem.js/TaskItem";
 
 import style from './TaskList.module.scss';
 
 const TaskList = () => {
 
-  const { tasks } = useTodoContext();
+  const tasks = useSelector((state) => state.tasks);
+
+  useEffect(() => {
+    initTasks();
+  }, []);
 
   return (
     <div className={`${style['TaskList']}`}>

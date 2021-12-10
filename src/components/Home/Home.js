@@ -1,6 +1,8 @@
-import { useTodoContext } from '../../contexts/TodoContext';
+// import { useTodoContext } from '../../contexts/TodoContext';
 import TaskForm from '../TaskForm/TaskForm';
 import TaskList from '../TaskList/TaskList';
+// import { useDispatch } from 'react-redux';
+import { deleteAllTasks } from '../../redux/slices/TodoSlice';
 
 import { MdOutlineClose } from 'react-icons/md';
 
@@ -8,7 +10,8 @@ import style from './Home.module.scss';
 
 const Home = () => {
 
-  const { deleteAllTasks } = useTodoContext();
+  // const { deleteAllTasks } = useTodoContext();
+  // const dispatch = useDispatch();
 
   return (
     <>
